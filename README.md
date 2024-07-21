@@ -1,4 +1,11 @@
 # Adritian Free Hugo Theme
+
+> [!WARNING]
+>
+> This repository is a fork of the [Adritian Free Hugo Theme](https://github.com/zetxek/adritian-free-hugo-theme), which is itself a fork of the [Raditian Theme](https://github.com/radity/raditian-free-hugo-theme) by Radity. It is maintained solely to host changes to the theme for my personal website.
+>
+> For a better maintained and more generalizable version of this theme, users are encouraged to use the versions provided by [Adrián Moreno Peña](https://github.com/zetxek) or the [Radity Team](https://github.com/radity). You are welcome to cherry-pick changes you like from my fork, but please consider the original versions for the most up-to-date features and improvements.
+
 ###### Adritian Hugo Theme for Personal Websites or Professional minimalistic landing pages
 
 See it live at **[adritian-demo.vercel.app](https://https://adritian-demo.vercel.app/)** (simple demo site, vanilla installation) or **[adrianmoreno.info](https://www.adrianmoreno.info)** (my personal site, running on this theme)
