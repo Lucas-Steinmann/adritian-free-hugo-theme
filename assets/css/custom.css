@@ -1,13 +1,13 @@
 /* You can customize theme styles here */
 .header .navbar-brand span:first-child{
-    color: #478079;
+    color: var(--primary);
 }
 .header .container{
     padding-left: 10px;
 }
 
 html body ::selection{
-    background-color:#488079;color:#fff
+    background-color:var(--primary);color:#fff
 }
 
 .profile-image img{
@@ -110,7 +110,7 @@ ul.book-category-content {
 }
 .book-content.featured::before {
     content: "\2605"; /* Unicode bullet symbol */
-    color: #478079;  /* Bullet color */
+    color: var(--primary);  /* Bullet color */
 	/* Optional tweaks */
     font-weight: bold;
     padding-right: 10px;
@@ -124,12 +124,16 @@ li.book-content p{
     line-height: normal;
 }
 
+.about__profile-picture {
+    align-content: center;
+}
+
 .about__profile-picture img{
     object-fit: contain;
 }
 
 .experience__company{
-    color: #478079;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .experience__location{
@@ -182,7 +186,10 @@ body.home div.experience{
 }
 
 article.post.summary h2{
-    font-size: 32px
+    font-size: 32px;
+}
+article.post.summary a {
+    color: #000;
 }
 
 #blog-single #meta{

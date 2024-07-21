@@ -414,7 +414,7 @@ legend {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-    --blue: #478079;
+    --blue: #0a66c2;
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #e83e8c;
@@ -427,7 +427,7 @@ legend {
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #478079;
+    --primary: #0a66c2;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
@@ -516,11 +516,11 @@ sup {
     top: -0.5em;
 }
 a {
-    color: #478079;
+    color: var(--primary);
     background-color: transparent;
 }
 a:hover {
-    color: #055047;
+    color: var(--primary);
     text-decoration: underline;
 }
 a:not([href]):not([tabindex]),
@@ -7072,7 +7072,7 @@ button.bg-dark:hover {
 .text-center {
     text-align: center !important;
 }
-@media (min-width: 576px) {
+@media (max-width: 767px) {
     .flex-sm-column,
     .flex-sm-row {
         -webkit-box-direction: normal !important;
@@ -9444,9 +9444,9 @@ br {
     color: #000;
     background-color: transparent;
     border-color: transparent;
-    will-change: border-color, background-color, border-color;
-    -webkit-transition: border-color, background-color, border-color;
-    transition: border-color, background-color, border-color;
+    will-change: border-color, color, background-color, border-color;
+    -webkit-transition: border-color, color, background-color, border-color;
+    transition: border-color, color, background-color, border-color;
     -webkit-transition-duration: 0.35s;
     transition-duration: 0.35s;
     -webkit-transition-timing-function: ease;
@@ -9461,8 +9461,8 @@ br {
 .btn-frameless:not(:disabled):not(.disabled):active,
 .show > .btn-frameless.dropdown-toggle {
     background-color: transparent;
-    border-color: #000;
-    color: #000;
+    /*border-color: #000;*/
+    color: var(--primary);
 }
 .btn-light {
     position: relative;
@@ -10069,7 +10069,6 @@ textarea:focus {
     align-items: center;
 }
 .header {
-    padding-top: 20px;
     -webkit-transition-property: height, padding, background-color, box-shadow;
     transition-property: height, padding, background-color, box-shadow;
     -webkit-transition-duration: 0.35s;
@@ -10454,7 +10453,7 @@ textarea:focus {
     align-items: center;
     position: relative;
     margin-bottom: -20px;
-    padding-top: 120px;
+    padding-top: 2rem;
 }
 .rad-showcase__bg {
     -webkit-box-pack: start;
@@ -10473,10 +10472,16 @@ textarea:focus {
     height: 100%;
     max-height: 721px;
 }
+
+@media (min-width: 768px) {
+    .rad-showcase {
+        padding-top: 3rem;
+    }
+}
 @media (min-width: 968px) {
     .rad-showcase {
         min-height: 870px;
-        padding-top: 0;
+        padding-top: 2rem;
         margin-bottom: 0;
     }
     .rad-showcase__bg {
@@ -10524,19 +10529,15 @@ textarea:focus {
     width: 100%;
 }
 .rad-showcase .platform-links {
-    margin-top: 40px;
-    margin-right: -5px;
-}
-@media (min-width: 992px) {
-    .rad-showcase .platform-links {
-        margin-top: 0;
-        margin-right: -10px;
-    }
+    align-content: center;
 }
 .rad-showcase .platform-links [class^="icon-"] {
     margin-right: 5px;
     font-size: 17px;
     color: #000;
+}
+.platform-links a:hover {
+    text-decoration: none;
 }
 .rad-showcase .platform-links [class^="icon-"]:hover::before {
     -webkit-transition-duration: 0.15s;
