@@ -190,6 +190,14 @@ article.post.summary h2{
     padding-bottom: 10px;
 }
 
+#blog-single li {
+    color: #333
+}
+
+#blog-single strong {
+    font-weight: bold;
+}
+
 .light-border-bottom::after{
     content: "";
     width: 80%;
@@ -203,6 +211,12 @@ article.post.summary h2{
 #blog-single #meta section{
     font-weight: lighter;
 }
+#blog-single h2{
+    font-size: 30px;
+}
+#blog-single h3{
+    font-size: 24px;
+}
 #blog-single #meta h4{
     font-size: 16px;
     font-weight: light;
@@ -212,6 +226,9 @@ article.post.summary h2{
     font-size: 14px;
     font-weight: light;
     display: inline;
+}
+#blog-single {
+    padding-top: 20px;
 }
 aside.content-browser{
     margin-top: 20px;

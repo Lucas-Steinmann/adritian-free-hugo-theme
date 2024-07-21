@@ -813,13 +813,24 @@ pre code {
     margin-right: auto;
     margin-left: auto;
 }
+.blog-container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
 @media (min-width: 576px) {
     .container {
-        max-width: 540px;
+        max-width: 90%;
+    }
+    .blog-container {
+        max-width: 90%;
     }
 }
 @media (min-width: 768px) {
     .container {
+        max-width: 720px;
+    }
+    .blog-container {
         max-width: 720px;
     }
 }
@@ -827,10 +838,16 @@ pre code {
     .container {
         max-width: 960px;
     }
+    .blog-container {
+        max-width: 720px;
+    }
 }
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
+    }
+    .blog-container {
+        max-width: 720px;
     }
 }
 .col,
@@ -9303,6 +9320,9 @@ p + p {
     .display-1 {
         font-size: 60px;
     }
+    .display-1 span {
+        font-size: 40px;
+    }
 }
 p a,
 span a {
@@ -10509,7 +10529,7 @@ textarea:focus {
 }
 @media (min-width: 992px) {
     .rad-showcase .platform-links {
-        margin-top: 92px;
+        margin-top: 0;
         margin-right: -10px;
     }
 }
