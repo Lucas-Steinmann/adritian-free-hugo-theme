@@ -1,0 +1,38 @@
+{{ $src := .Get "src" }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $alt := .Get "alt" | default ($caption | plainify) }}
+{{ $href := .Get "href" }}
+{{ $img := (.Page.Resources.ByType "image").GetMatch $src }}
+{{ $width := (.Get "width") | default $img.Width }}
+{{ $height := (.Get "height") | default $img.Height }}
+{{ $imgWebp := $img.Resize (printf "%dx%d webp q100 Lanczos picture" $width $height) }}
+{{ $max_width := (.Get "max_width") | default "" }}
+
+
+<figure>
+  <div class="d-flex justify-content-center">
+    <div style="max-width: {{ $max_width }}">
+      {{- if $href -}}
+        <a href="{{ $href }}" {{ if strings.HasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>
+      {{- end -}}
+      <img alt="{{ $alt }}"
+           src="{{ $imgWebp.RelPermalink }}"
+           width="{{ $width }}"
+           height="{{ $height }}"
+           loading="lazy"
+           style="object-fit: scale-down"
+      />
+      {{- if $href -}}
+        </a>
+      {{- end -}}
+    </div>
+  </div>
+
+  {{- if $caption -}}
+    <figcaption>
+        <p>
+          {{ $caption | markdownify | emojify }}
+        </p>
+    </figcaption>
+  {{- end -}}
+</figure>
