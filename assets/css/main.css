@@ -9351,6 +9351,14 @@ br {
     font-size: 24%;
 }
 
+.imprint-lead {
+    margin-top: 2em;
+}
+
+.imprint-lead br {
+    margin: 0;
+}
+
 @media (min-width: 992px) {
     .lead {
         font-size: 18px;
