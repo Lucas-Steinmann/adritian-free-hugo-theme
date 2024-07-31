@@ -290,3 +290,15 @@ aside.content-browser{
         padding-top: 40px;
     }    
 }
+
+.highlight {
+    margin-bottom: 30px;
+}
+.highlight > div  {
+    border-radius: 8px;
+    padding: 0.5em 0.5em;
+}
+
+.highlight pre {
+    margin-bottom: 0;
+}
