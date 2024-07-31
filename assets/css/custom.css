@@ -84,7 +84,6 @@ ul.book-category-content{
     width: 100%;
 }
 
-
 .book-content .book-header{
     margin-bottom: 10px;;
 }
@@ -198,7 +197,13 @@ article.post.summary a {
 }
 
 #blog-single li {
-    color: #333
+    color: #333;
+    display: list-item;
+    padding-left: 0;
+}
+
+#blog-single li::before {
+    content: none;
 }
 
 #blog-single strong {
@@ -237,6 +242,13 @@ article.post.summary a {
 #blog-single {
     padding-top: 20px;
 }
+#wordcount{
+    font-size: small;
+}
+#date{
+    font-size: small;
+}
+
 aside.content-browser{
     margin-top: 20px;
     padding-top: 10px;
