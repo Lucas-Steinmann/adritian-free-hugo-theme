@@ -129,6 +129,10 @@ li.book-content p{
 
 .about__profile-picture img{
     object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-width: 745px;
+    max-height: 540px;
 }
 
 .experience__company{
