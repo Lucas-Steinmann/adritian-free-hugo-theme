@@ -3,9 +3,16 @@
 {{ $alt := .Get "alt" | default ($caption | plainify) }}
 {{ $href := .Get "href" }}
 {{ $img := (.Page.Resources.ByType "image").GetMatch $src }}
-{{ $width := (.Get "width") | default $img.Width }}
-{{ $height := (.Get "height") | default $img.Height }}
-{{ $imgWebp := $img.Resize (printf "%dx%d webp q100 Lanczos picture" $width $height) }}
+{{ $width := .Get "width" }}
+{{ $height := .Get "height" }}
+{{ if $height }}
+{{ else }}
+{{ $height = $img.Height }}
+{{ end }}
+{{ if $width }}
+{{ else }}
+{{ $width = $img.Width }}
+{{ end }}
 {{ $max_width := (.Get "max_width") | default "" }}
 
 
@@ -15,13 +22,23 @@
       {{- if $href -}}
         <a href="{{ $href }}" {{ if strings.HasPrefix $href "http" }} target="_blank" rel="noopener"{{ end }}>
       {{- end -}}
-      <img alt="{{ $alt }}"
-           src="{{ $imgWebp.RelPermalink }}"
-           width="{{ $width }}"
-           height="{{ $height }}"
-           loading="lazy"
-           style="object-fit: scale-down"
-      />
+      {{ if eq $img.MediaType.SubType "svg" }}
+        <img alt="{{ $alt }}"
+             src="{{ $img.RelPermalink }}"
+             width="{{ $width }}"
+             height="{{ $height }}"
+             loading="lazy"
+        />
+      {{ else }}
+        {{ $imgWebp := $img.Resize (printf "%dx%d webp q100 Lanczos picture" $width $height) }}
+        <img alt="{{ $alt }}"
+             src="{{ $imgWebp.RelPermalink }}"
+             width="{{ $width }}"
+             height="{{ $height }}"
+             loading="lazy"
+             style="object-fit: scale-down"
+        />
+      {{ end }}
       {{- if $href -}}
         </a>
       {{- end -}}
