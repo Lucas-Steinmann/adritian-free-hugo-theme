@@ -18,8 +18,6 @@ theme = "adritian-free-hugo-theme"
   URL = "js/rad-animations.js"
   [[params.plugins.js]]
   URL = "js/sticky-header.js"
-  [[params.plugins.js]]
-  URL = "js/library/fontfaceobserver.js"
 
 
 # navigation
