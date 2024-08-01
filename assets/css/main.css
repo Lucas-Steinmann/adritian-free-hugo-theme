@@ -449,7 +449,7 @@ legend {
 ::before {
     box-sizing: border-box;
 }
-/* purgecss stop ignore */
+/* purgecss end ignore */
 body {
     margin: 0;
     font-size: 1rem;
@@ -9413,7 +9413,7 @@ br {
     margin-left: 0;
     margin-right: 0;
 }
-/* purgecss stop ignore */
+/* purgecss end ignore */
 .btn-lg {
     line-height: 1.91;
     min-width: 140px;
@@ -10336,6 +10336,7 @@ textarea:focus {
 .header .navbar-light .navbar-nav .nav-link {
     color: #000;
 }
+/* purgecss ignore */
 .header--sticky-triggered {
     padding-top: 5px;
     padding-bottom: 5px;
