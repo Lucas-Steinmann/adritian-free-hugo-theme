@@ -5,27 +5,33 @@
   </div>
   <div class="row">
     <div class="col-12 col-lg-4">
+      {{ with .Site.Data.homepage.experience.button }}
       <a
-        href="{{ .Site.Data.homepage.experience.button.URL | absURL }}"
+        href="{{ .URL | absURL }}"
         class="btn btn-primary btn-block"
         target="_blank"
+        data-umami-event="{{ .eventName }}"
         rel="noopener noreferrer"
       >
-        <i class="{{ .Site.Data.homepage.experience.button.icon }}"></i>
-        {{ .Site.Data.homepage.experience.button.btnText }}
+        <i class="{{ .icon }}"></i>
+        {{ .btnText }}
         <i class="icon-arrow-right"></i
       ></a>
+      {{ end }}
     </div>
     <div class="col-12 col-lg-4">
+      {{ with .Site.Data.homepage.experience.button2 }}
       <a
-        href="{{ .Site.Data.homepage.experience.button2.URL | absURL }}"
+        href="{{ .URL | absURL }}"
         class="btn btn-frameless btn-block"
         target="_blank"
+        data-umami-event="{{ .eventName }}"
         rel="noopener noreferrer"
       >
-        <i class="{{ .Site.Data.homepage.experience.button2.icon }}"></i>
-        {{ .Site.Data.homepage.experience.button2.btnText }}
+        <i class="{{ .icon }}"></i>
+        {{ .btnText }}
       </a>
+      {{ end }}
     </div>
     {{ if .Site.Data.homepage.experience.button3.btnText }}
     <div class="col-12 col-lg-4">

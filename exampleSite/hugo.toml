@@ -71,7 +71,11 @@ theme = "adritian-free-hugo-theme"
   [params.google_tag_manager]
       code = "GTM-XXXXX"
       enabled = false
-  
+  [params.umami]
+      website_id = "<your-website-id>"
+      url = "https://umami.is/script.js"
+      enabled = false
+
   [params.logo]
     text1 = "Cool"
     text2 = "Name"

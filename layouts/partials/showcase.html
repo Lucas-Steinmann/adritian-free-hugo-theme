@@ -17,6 +17,7 @@
         <a
           href="{{ .Site.Data.homepage.showcase.button.URL }}"
           class="btn btn-primary"
+          data-umami-event="{{ .Site.Data.homepage.showcase.button.eventName }}"
         >
           <i class="{{ .Site.Data.homepage.showcase.button.icon }}"></i>
           {{ .Site.Data.homepage.showcase.button.btnText }}
@@ -24,7 +25,7 @@
         </div>
         <div class="platform-links">
         {{ range .Site.Data.homepage.showcase.socialLinks }}
-          <a href="{{ .URL | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .icon }}">
+          <a href="{{ .URL | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .icon }}" data-umami-event="{{ .eventName }}">
               <i class="icon-{{ .icon }}-line"></i>
           </a>
         {{ end }}

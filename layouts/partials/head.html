@@ -47,4 +47,9 @@
 {{ else }}
 <!-- no google tag displayed -->
 {{ end }}
-
+{{ if .Site.Params.umami.enabled }}
+<!-- Umami analytics -->
+<script async defer data-website-id="{{ .Site.Params.umami.website_id }}" src="{{ .Site.Params.umami.url }}"></script>
+{{ else }}
+<!-- no umami analytics displayed -->
+{{ end }}
