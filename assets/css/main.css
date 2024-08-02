@@ -784,6 +784,9 @@ pre code {
 code {
     color: #e83e8c;
     word-break: break-word;
+    background-color: rgb(39, 40, 34);
+    border-radius: 0.3em;
+    padding: 0.1em 0.2em 0 0.2em;
 }
 kbd {
     padding: 0.2rem 0.4rem;
