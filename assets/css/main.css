@@ -66,289 +66,7 @@ sup {
 [type="search"] {
     -webkit-appearance: none;
 }
-/*@font-face {
-    font-family: Inter;
-    font-display: swap;
-    font-style: normal;
-    font-weight: 300;
-    src: url(../fonts/inter/Inter-Light.woff2) format("woff2"), url(../fonts/inter/Inter-Light.woff) format("woff");
-}
-@font-face {
-    font-family: Inter;
-    font-display: swap;
-    font-style: normal;
-    font-weight: 700;
-    src: url(../fonts/inter/Inter-Bold.woff2) format("woff2"), url(../fonts/inter/Inter-Bold.woff) format("woff");
-}*./
-@-webkit-keyframes right-to-left {
-    0% {
-        -webkit-transform: translateX(180%);
-        transform: translateX(180%);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes right-to-left {
-    0% {
-        -webkit-transform: translateX(180%);
-        transform: translateX(180%);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-webkit-keyframes right-to-left-out {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(180%);
-        transform: translateX(180%);
-    }
-}
-@keyframes right-to-left-out {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(180%);
-        transform: translateX(180%);
-    }
-}
-@-webkit-keyframes left-to-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-20%);
-        transform: translateX(-20%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes left-to-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-20%);
-        transform: translateX(-20%);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-webkit-keyframes left-to-right-out {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(-180%);
-        transform: translateX(-180%);
-    }
-}
-@keyframes left-to-right-out {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(-180%);
-        transform: translateX(-180%);
-    }
-}
-@-webkit-keyframes newsletter-notification-in {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: calc(100% + 10px);
-    }
-}
-@keyframes newsletter-notification-in {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: calc(100% + 10px);
-    }
-}
-@-webkit-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-webkit-keyframes stretch-in {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-@keyframes stretch-in {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-@-webkit-keyframes slide-to-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-70px);
-        transform: translateX(-70px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes slide-to-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-70px);
-        transform: translateX(-70px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-webkit-keyframes slide-to-left {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(70px);
-        transform: translateX(70px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@keyframes slide-to-left {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(70px);
-        transform: translateX(70px);
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-@-webkit-keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-webkit-keyframes animated-node-enter-to-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-30px);
-        transform: translateX(-30px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes animated-node-enter-to-right {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(-30px);
-        transform: translateX(-30px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-webkit-keyframes animated-node-enter-to-left {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(60px);
-        transform: translateX(60px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes animated-node-enter-to-left {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateX(60px);
-        transform: translateX(60px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@-webkit-keyframes animated-node-enter-to-top {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(40px);
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-@keyframes animated-node-enter-to-top {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(40px);
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-} /*!
-
+/*
  * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -363,15 +81,10 @@ sup {
 html {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
-    font-family: sans-serif;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
-}
-.popover,
-.tooltip,
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 article,
 aside,
@@ -440,8 +153,8 @@ legend {
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-family-monospace: Menlo, SFMono-Regular, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 /* purgecss start ignore */
 *,
@@ -481,7 +194,7 @@ address {
 dl,
 ol,
 ul {
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
 }
 ol ol,
 ol ul,
@@ -664,28 +377,28 @@ template {
 }
 .h1,
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 .h2,
 h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .h3,
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 .close,
 .h4,
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .h5,
 h5 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 .h6,
 h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .display-2 {
     font-size: 5.5rem;
@@ -781,12 +494,7 @@ a > code,
 pre code {
     color: inherit;
 }
-code {
-    color: #e83e8c;
-    word-break: break-word;
-    background-color: rgb(39, 40, 34);
-    border-radius: 0.3em;
-    padding: 0.1em 0.2em 0 0.2em;
+p > code {
 }
 kbd {
     padding: 0.2rem 0.4rem;
@@ -820,6 +528,10 @@ pre code {
     max-width: 90%;
     margin-right: auto;
     margin-left: auto;
+}
+.blog-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 @media (min-width: 576px) {
     .container {
@@ -4578,6 +4290,11 @@ input[type="submit"].btn-block {
     color: #6c757d;
     content: "/";
 }
+.breadcrumb-item a {
+    text-decoration: none;
+    border-bottom: 0px;
+}
+
 .breadcrumb-item.active {
     color: #6c757d;
 }
@@ -7049,9 +6766,6 @@ button.bg-dark:hover {
 .mx-auto {
     margin-left: auto !important;
 }
-.text-monospace {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
-}
 .text-justify {
     text-align: justify !important;
 }
@@ -9141,7 +8855,6 @@ h6,
 p {
     font-style: normal;
     font-stretch: normal;
-    letter-spacing: -0.2px;
 }
 .text-decoration-none {
     text-decoration: none !important;
@@ -9252,9 +8965,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 700;
     line-height: normal;
-    color: #000;
     margin-bottom: 8px;
 }
 @media (min-width: 992px) {
@@ -9273,58 +8984,28 @@ h6 {
         margin-bottom: 10px;
     }
 }
-h1,
-h2 {
-    margin-bottom: 16px;
-}
-h2 {
-    font-size: 32px;
-}
-@media (min-width: 992px) {
-    h1 {
-        margin-bottom: 10px;
-    }
-    h2 {
-        margin-bottom: 10px;
-        font-size: 48px;
-    }
-}
-h3,
-h4 {
-    font-size: 20px;
-    font-weight: 600;
-}
-@media (min-width: 992px) {
-    h3,
-    h4 {
-        font-size: 32px;
-    }
-    p {
-        line-height: 28px;
-    }
-}
 p {
     margin-bottom: 30px;
     font-size: 16px;
-    font-weight: 300;
     line-height: 28px;
-    color: #333;
 }
-p + p {
+p + p,
+p + ul,
+p + ol {
     margin-top: -12px;
 }
 .display-1 {
-    font-size: 36px;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: normal;
     color: #000;
 }
 @media (min-width: 992px) {
     .display-1 {
-        font-size: 60px;
+        font-size: 3rem;
     }
     .display-1 span {
-        font-size: 40px;
+        font-size: 2rem;
     }
 }
 p a,
@@ -9340,11 +9021,7 @@ span a:hover {
     text-decoration: none;
 }
 .lead {
-    font-size: 16px;
     font-weight: 300;
-    line-height: 1.2;
-    letter-spacing: -0px;
-    color: #000;
 }
 
 br {
@@ -9914,12 +9591,11 @@ html body {
     flex-direction: column;
     overflow: hidden;
     color: #000;
-    font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-family: Helvetica;
-    letter-spacing: 0.3px;
+    font-family: var(--font-family-sans-serif);
+    letter-spacing: 0.1px;
     word-spacing: 0px;
     visibility: visible;
-    font-weight: 400;
+    line-height: 1.6;
 }
 html body ::-moz-selection {
     background-color: #AE1B13;
@@ -9971,12 +9647,12 @@ textarea:focus {
 }
 @media (min-width: 992px) {
     .section {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     .section .row.row--padded {
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
     .section div[class*="col-"].rad-col-text h2 {
         text-align: left;
@@ -10035,10 +9711,6 @@ textarea:focus {
     display: block;
     position: relative;
     padding-left: 15px;
-    font-size: 16px;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.6);
-    line-height: 1.24;
     margin-bottom: 12px;
     text-align: left;
 }
@@ -10152,6 +9824,7 @@ textarea:focus {
 }
 .header .navbar-brand span {
     display: block;
+    font-family: Helvetica, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 .header .navbar-brand span:first-child {
     align-self: center;
@@ -10172,7 +9845,6 @@ textarea:focus {
 .header .navbar-brand span:nth-child(2) {
     margin-top: -20px;
     align-self: center;
-    font-family: AutumnMoon;
     font-size: 25px;
     font-weight: 400;
     letter-spacing: -1.17px;
@@ -10508,14 +10180,14 @@ textarea:focus {
 }
 .rad-showcase .container h1 {
     width: 100%;
-    font-size: 32px;
+    font-size: 2rem;
 }
 @media (min-width: 968px) {
     .rad-showcase__bg--mobile {
         display: none;
     }
     .rad-showcase .container h1 {
-        font-size: 48px;
+        font-size: 2.5rem;
     }
 }
 .rad-showcase .container h1 span {

@@ -40,9 +40,20 @@ html body ::selection{
 }
 
 .header .navbar-brand span:nth-child(2){
-    font-family: inherit;
     margin-top: 0;
 }
+
+@media (max-width: 768px) {
+    #education .col-sm-6 {
+        margin-top: 2rem;
+    }
+}
+#education h2,
+#about h2,
+#experience h2 {
+    font-size: 2rem;
+}
+
 
 #breadcrumb-bar{
     position: relative;
@@ -52,11 +63,6 @@ html body ::selection{
 ul.breadcrumbs{
     display: inline;
     padding-left: 0;
-}
-ul.breadcrumbs li:not(:last-child):after{
-    content: ">";
-    margin-left: 10px;
-    margin-right: 10px;
 }
 ul.breadcrumbs li{
     display: inline;
@@ -189,9 +195,6 @@ body.home div.experience{
     margin-bottom: 20px;
 }
 
-article.post.summary h2{
-    font-size: 32px;
-}
 article.post.summary a {
     color: #000;
 }
@@ -202,7 +205,6 @@ article.post.summary a {
 }
 
 #blog-single li {
-    color: #333;
     display: list-item;
     padding-left: 0;
 }
@@ -248,10 +250,10 @@ article.post.summary a {
     padding-top: 20px;
 }
 #wordcount{
-    font-size: small;
+    font-weight: 500;
 }
 #date{
-    font-size: small;
+    font-weight: 500;
 }
 
 aside.content-browser{
@@ -306,5 +308,10 @@ aside.content-browser{
 
 .highlight pre {
     margin-bottom: 0;
+}
+
+code {
+    font-weight: 500;
+    letter-spacing: -0.2px;
 }
 /* purgecss end ignore */

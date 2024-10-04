@@ -1,6 +1,6 @@
 <section id="breadcrumb-bar" class="breadcrumb-bar blog-container">
         <ul class="breadcrumbs">
-            <li class="breadcrum-item"><span><a href="{{ relURL "" }}">Home</a></span></li>
+            <li class="breadcrumb-item"><span><a href="{{ relURL "" }}">Home</a></span></li>
             {{- $.Scratch.Set "url" "" -}}
             {{- range (split .RelPermalink "/") -}}
                 {{- if (gt (len .) 0) -}}    
@@ -15,10 +15,10 @@
                     {{- end -}}
                     {{- if eq ($.Scratch.Get "isPage") "true" -}}
                         {{- with $.Site.GetPage (print . ".md") -}}
-                            <li class="breadcrum-item current">{{ .Title }}</li>
+                            <li class="breadcrumb-item current">{{ .Title }}</li>
                         {{- end -}}
                     {{- else -}}
-                        <li class="breadcrum-item"><span><a href="{{ $.Scratch.Get `url` }}">{{ humanize . }}</a></span></li>
+                        <li class="breadcrumb-item"><span><a href="{{ $.Scratch.Get `url` }}">{{ humanize . }}</a></span></li>
                     {{- end -}}
                 {{- end -}}
             {{- end -}}

@@ -15,13 +15,13 @@
       <div class="blog-container">
         <h1>{{ .Title }}</h1>
 
-        <aside id="meta" class="light-border-bottom">
+        <aside id="meta">
           <div>
             <section>
               Published on
-              <span id="date"><strong>{{ .Date.Format "Mon Jan 2, 2006" }}</strong></span>
+              <span id="date">{{ .Date.Format "Mon Jan 2, 2006" }}</span>
               ·
-              <span id="wordcount"><strong>{{ .WordCount }} Words</strong></span>
+              <span id="wordcount">{{ .WordCount }} Words</span>
             </section>
             {{ with .GetTerms "topics" }}
             <ul id="topics">
