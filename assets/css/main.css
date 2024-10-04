@@ -9020,9 +9020,6 @@ span a:hover {
     color: rgba(0, 0, 0, 0.7);
     text-decoration: none;
 }
-.lead {
-    font-weight: 300;
-}
 
 br {
     content: "";
