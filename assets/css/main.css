@@ -9708,7 +9708,7 @@ textarea:focus {
     display: block;
     position: relative;
     padding-left: 15px;
-    margin-bottom: 12px;
+    margin-bottom: 0.2rem;
     text-align: left;
 }
 .section li::before {
@@ -10002,8 +10002,8 @@ textarea:focus {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: #000;
 }
 .footer .container {
@@ -10045,8 +10045,8 @@ textarea:focus {
     -webkit-box-flex: 1;
     flex: 1;
     grid-area: links;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 @media (min-width: 992px) {
     .footer__links {
@@ -10069,13 +10069,23 @@ textarea:focus {
 .footer .navbar-nav {
     display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    flex-direction: column;
+    flex-direction: row;
     -webkit-box-pack: start;
-    justify-content: flex-start;
+    justify-content: center;
     -webkit-box-align: center;
-    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.footer__links__separator {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 1rem;
+    /* border-reset*/
+    border: none;
+    border-left: 1px solid lightgray;
 }
 @media (min-width: 992px) {
     .footer .navbar-nav {
@@ -10095,8 +10105,8 @@ textarea:focus {
     font-size: 18px;
     font-weight: 500;
     color: #fff;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     min-height: 50px;
     white-space: nowrap;
 }
