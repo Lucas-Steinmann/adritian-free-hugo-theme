@@ -47,7 +47,7 @@
 {{ else }}
 <!-- no google tag displayed -->
 {{ end }}
-{{ if .Site.Params.umami.enabled }}
+{{ if and .Site.Params.umami.enabled hugo.IsProduction }}
 <!-- Umami analytics -->
 <script async defer data-website-id="{{ .Site.Params.umami.website_id }}" src="{{ .Site.Params.umami.url }}"></script>
 {{ else }}
