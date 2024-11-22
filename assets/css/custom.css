@@ -249,6 +249,11 @@ article.post.summary a {
 #blog-single {
     padding-top: 20px;
 }
+
+#blog-single blockquote > p,
+#blog-single blockquote {
+    font-style: italic;
+}
 #wordcount{
     font-weight: 500;
 }
