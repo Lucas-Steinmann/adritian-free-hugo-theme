@@ -327,4 +327,44 @@ sup[id^="fnref"] {
     margin-top: -85px;
     display: inline-block;
 }
+
+#blog-single table {
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    border-collapse: collapse;
+}
+
+#blog-single th,
+#blog-single td {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.5em 0.9em;
+    text-align: left;
+}
+
+#blog-single thead th {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#blog-single tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+@media only screen and (min-width: 992px) {
+    #blog-single table {
+        width: 130%;
+        max-width: 130%;
+        margin-left: -15%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #blog-single table {
+        width: 150%;
+        max-width: 150%;
+        margin-left: -25%;
+    }
+}
 /* purgecss end ignore */
