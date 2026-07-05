@@ -330,6 +330,9 @@ sup[id^="fnref"] {
 
 #blog-single table {
     display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     width: max-content;
     max-width: 100%;
     overflow-x: auto;
@@ -354,17 +357,13 @@ sup[id^="fnref"] {
 
 @media only screen and (min-width: 992px) {
     #blog-single table {
-        width: 130%;
         max-width: 130%;
-        margin-left: -15%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     #blog-single table {
-        width: 150%;
         max-width: 150%;
-        margin-left: -25%;
     }
 }
 /* purgecss end ignore */
